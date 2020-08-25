@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # Flihgt
   resources :flights
 
+  # Test
+
 end
