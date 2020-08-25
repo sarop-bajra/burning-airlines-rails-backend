@@ -3,7 +3,9 @@
 one:
   name: MyText
   email: MyText
+  password_digest: MyText
 
 two:
   name: MyText
   email: MyText
+  password_digest: MyText
