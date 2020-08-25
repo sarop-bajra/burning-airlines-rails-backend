@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Creating planes..."
 Plane.destroy_all
-p1 = Plane.create! name: 'Lockheed SR-71 Blackbird'
-p2 = Plane.create! name: 'Boeing 787'
-p3 = Plane.create! name: 'Cirrus SR22'
-p4 = Plane.create! name: 'Wright Flyer'
-puts "created #{ Plane.count } plane."
+p1 = Plane.create! name: 'Lockheed SR-71 Blackbird', row:4, column:'E'
+p2 = Plane.create! name: 'Boeing 787', row:5, column:'F'
+p3 = Plane.create! name: 'Cirrus SR22', row:5, column:'C'
+p4 = Plane.create! name: 'Wright Flyer', row:3, column:'D'
+puts "created #{ Plane.count } plane.", row:6, column:'E'
 
 puts "Creating flights..."
 Flight.destroy_all
@@ -35,9 +35,9 @@ r1 = Reservation.create! column:'A', row:'1'
 r2 = Reservation.create! column:'B', row:'2'
 r3 = Reservation.create! column:'C', row:'3'
 r4 = Reservation.create! column:'D', row:'4'
-r5 = Reservation.create! column:'E', row:'5'
-r6 = Reservation.create! column:'F', row:'6'
-r7 = Reservation.create! column:'G', row:'7'
+r5 = Reservation.create! column:'B', row:'5'
+r6 = Reservation.create! column:'C', row:'6'
+r7 = Reservation.create! column:'D', row:'7'
 
 # Plane has many flights
 p1.flights << f1 << f2
