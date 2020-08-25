@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 1
+  origin: MyText
+  destination: MyText
+  airplane_id: 1
+  reservation_id: 1
+
+two:
+  date: 1
+  origin: MyText
+  destination: MyText
+  airplane_id: 1
+  reservation_id: 1
