@@ -1,38 +1,38 @@
 require 'test_helper'
 
-class AirplanesControllerTest < ActionDispatch::IntegrationTest
+class PlanesControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get airplanes_new_url
+    get planes_new_url
     assert_response :success
   end
 
   test "should get create" do
-    get airplanes_create_url
+    get planes_create_url
     assert_response :success
   end
 
   test "should get index" do
-    get airplanes_index_url
+    get planes_index_url
     assert_response :success
   end
 
   test "should get show" do
-    get airplanes_show_url
+    get planes_show_url
     assert_response :success
   end
 
   test "should get edit" do
-    get airplanes_edit_url
+    get planes_edit_url
     assert_response :success
   end
 
   test "should get update" do
-    get airplanes_update_url
+    get planes_update_url
     assert_response :success
   end
 
   test "should get destroy" do
-    get airplanes_destroy_url
+    get planes_destroy_url
     assert_response :success
   end
 
