@@ -12,13 +12,29 @@
         <h4><%= plane.name %></h4>
         <p>Total Seats: <strong><%= plane.columns * plane.rows %></strong></p>
         <div class="seat_grid">
-          <% plane.columns.times do |i| %>
-            <div class="columns">
-              <% plane.rows.times do |i| %>
-                <div class="seat rows"></div>
-              <% end %>
-            </div>
-          <% end %>
+          <div class="column_number_wrapper">
+            <% plane.columns.times do |i| %>
+              <span class="number">
+                <%= (i + 65).chr %>
+              </span>
+            <% end %>
+          </div>
+          <div class="grid_wrapper">
+            <% plane.rows.times do |i| %>
+              <div class="grid_row">
+
+                <div class="row_number">
+                  <div ><%= i + 1 %></div>
+                </div>
+                
+                <div class="columns_wrapper">
+                  <% plane.columns.times do |i| %>
+                    <div class="seat"></div>
+                  <% end %>
+                </div>
+              </div>
+            <% end %>
+          </div>
         </div>
       </li>
     <% end %>

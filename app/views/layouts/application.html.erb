@@ -14,12 +14,12 @@
     <nav class="nav">
       <div class="nav_wrapper">
         <div class="nav_wrapper_left">
-          Logo
+          <%= link_to image_tag("ba_logo.svg", alt: "Logo", class: "logo"), new_plane_path %>
         </div>
         <div class="nav_wrapper_right">
           <ul>
-            <li>Planes</li>
-            <li>Flights</li>
+            <li><%= link_to "Planes", new_plane_path %></li>
+            <li><%= link_to "Flights", new_flight_path %></li>
           </ul>
         </div>
       </div>
