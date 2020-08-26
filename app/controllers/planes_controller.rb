@@ -2,7 +2,6 @@ class PlanesController < ApplicationController
   def new
     @plane = Plane.new
     @planes = Plane.all.order("created_at DESC")
-    # @planes = Plane.first
   end
 
   def create

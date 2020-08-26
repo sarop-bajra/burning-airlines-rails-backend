@@ -1,5 +1,7 @@
 class FlightsController < ApplicationController
   def new
+    @flight = Flight.new
+    @flights = Flight.all.order("created_at DESC")   
   end
 
   def create
