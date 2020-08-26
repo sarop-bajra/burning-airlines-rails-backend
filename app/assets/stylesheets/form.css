@@ -1,0 +1,42 @@
+form {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 40px;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 40px;
+  width: 300px;
+  border-radius: 0px;
+  background-color: #f0f0f0;
+  border: 0px;
+  display: block;
+  margin: 15px 0 20px 0;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 0;
+  margin-top: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.create_button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FF421D;
+  color: #ffffff;
+  cursor: pointer;
+}
