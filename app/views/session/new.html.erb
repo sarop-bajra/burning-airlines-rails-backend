@@ -1,0 +1,43 @@
+<h2>Flamin' Gallahs Admin Portal</h2>
+<hr/>
+
+
+<h2>Login</h2>
+
+<% if flash[:error] %>
+<!-- print out any error messages from the controller -->
+<br>
+<strong>
+  <%= flash[:error] %>
+</strong>
+<br>
+<br>
+<% end %>
+
+<hr>
+
+<!-- we are not interacting with a model object, so we don't use 'form_for @obj' -->
+<%= form_tag login_path do %>
+<table>
+  <tr>
+    <td>
+      <%= label_tag :email %>
+    </td>
+    <td>
+      <%= email_field_tag :email %>
+    </td>
+  </tr>
+  <br>
+  <br>
+    <tr>
+      <td>
+        <%= label_tag :password %>
+      </td>
+      <td>
+        <%= password_field_tag :password %>
+      </td>
+    </tr>
+</table>
+<hr>
+<%= submit_tag 'Login' %>
+  <% end %>
