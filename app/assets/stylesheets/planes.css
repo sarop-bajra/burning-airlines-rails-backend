@@ -1,0 +1,16 @@
+.seat_grid {}
+
+.seat {
+  width: 20px;
+  height: 20px;
+  background-color: #18cb45;
+  padding: 1px;
+}
+
+.columns {
+  display: block;
+}
+
+.rows {
+  display: inline-block;
+}

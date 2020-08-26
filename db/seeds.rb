@@ -11,7 +11,7 @@ p1 = Plane.create! name: 'Lockheed SR-71 Blackbird', rows: 12, columns: 6
 p2 = Plane.create! name: 'Boeing 787', rows: 20, columns: 6
 p3 = Plane.create! name: 'Cirrus SR22', rows: 20, columns: 6
 p4 = Plane.create! name: 'Wright Flyer', rows: 18, columns: 6
-puts "created #{ Plane.count } plane.", rows: 24, columns: 6
+puts "created #{ Plane.count } plane."
 
 puts "Creating flights..."
 Flight.destroy_all

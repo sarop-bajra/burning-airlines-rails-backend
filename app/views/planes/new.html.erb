@@ -1,2 +1,26 @@
-<h1>Planes#new</h1>
-<p>Find me in app/views/planes/new.html.erb</p>
+<h2>Create a new plane and make money.</h2>
+
+<%= render partial: "form" %>
+
+<hr>
+
+<div>
+  <h2>All Planes</h2>
+  <ul>
+    <% @planes.each do |plane| %>
+      <li>
+        <h4><%= plane.name %></h4>
+        <p>Total Seat: <%= plane.columns * plane.rows %></p>
+        <div class="seat_grid">
+          <% plane.columns.times do |i| %>
+            <div class="columns">
+              <% plane.rows.times do |i| %>
+                <div class="seat rows"></div>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
