@@ -1,16 +1,61 @@
-.seat_grid {}
+/* ------------------------ Grid ------------------------ */
+
+.seat_grid {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.seat_number {
+  margin-bottom: 20px;
+}
+
+.column_number_wrapper {
+  position: relative;
+  left: 35px;
+  margin-bottom: 5px;
+}
+
+.row_wrapper {
+  height: 30px;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+}
+
+.grid_row {
+  position: relative;
+}
+
+.row_number {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.columns_wrapper {
+  padding-left: 35px;
+  display: inline-block;
+}
 
 .seat {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: #18cb45;
-  padding: 1px;
-}
-
-.columns {
-  display: block;
-}
-
-.rows {
   display: inline-block;
+}
+
+.plane_item {
+  margin: 30px 0;
+  border-bottom: 1px solid #d3d3d3;
 }

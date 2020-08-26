@@ -1,18 +1,20 @@
+<div class="form">
+
 <%= form_for @flight do |f| %>
 
-  <%= f.label :date, "Date: (i.e. 2020/04/13)" %><br>
-  <%= f.text_field :date %><br>
+  <%= f.label :date, "Date: (i.e. 2020/04/13)" %>
+  <%= f.text_field :date %>
 
-  <%= f.label :origin, "From:" %><br>
-  <%= f.text_field :origin %><br>
+  <%= f.label :origin, "From:" %>
+  <%= f.text_field :origin %>
 
-  <%= f.label :destination, "To:" %><br>
-  <%= f.text_field :destination %><br>
+  <%= f.label :destination, "To:" %>
+  <%= f.text_field :destination %>
 
-  <%= f.label :plane_id, "Select Plane" %><br>
-  <%= f.select :plane_id, Plane.pluck(:name, :id) %><br>
+  <%= f.label :plane_id, "Select Plane" %>
+  <%= f.select :plane_id, Plane.pluck(:name, :id) %>
   
-  <%= f.submit nil, class: "add_flight" %>
+  <%= f.submit nil, class: "create_button" %>
 
   <div class="error_message">
     <% if flash[:error] %>
@@ -21,3 +23,5 @@
   </div>
   
 <% end %>
+
+</div>

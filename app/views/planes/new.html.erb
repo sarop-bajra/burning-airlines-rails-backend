@@ -1,26 +1,46 @@
-<h2>Create a new plane and make money.</h2>
+<div class="content">
+
+<h1>Create a new plane and make money.</h1>
 
 <%= render partial: "form" %>
 
-<hr>
-
-<div>
-  <h2>All Planes</h2>
+<div class="plane_list">
+  <h1>All Planes</h1>
   <ul>
     <% @planes.each do |plane| %>
       <li>
-        <h4><%= plane.name %></h4>
-        <p>Total Seat: <%= plane.columns * plane.rows %></p>
-        <div class="seat_grid">
-          <% plane.columns.times do |i| %>
-            <div class="columns">
-              <% plane.rows.times do |i| %>
-                <div class="seat rows"></div>
+        <div class="plane_item">
+          <h3><%= plane.name %></h3>
+          <p class="seat_number">Total Seats: <strong><%= plane.columns * plane.rows %></strong></p>
+          <div class="seat_grid">
+            <div class="column_number_wrapper">
+              <% plane.columns.times do |i| %>
+                <span class="number">
+                  <%= (i + 65).chr %>
+                </span>
               <% end %>
             </div>
-          <% end %>
+            <div class="grid_wrapper">
+              <% plane.rows.times do |i| %>
+                <div class="grid_row">
+
+                  <div class="row_number">
+                    <div ><%= i + 1 %></div>
+                  </div>
+                  
+                  <div class="columns_wrapper">
+                    <% plane.columns.times do |i| %>
+                      <div class="seat"></div>
+                    <% end %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
         </div>
       </li>
     <% end %>
   </ul>
+</div>
+
 </div>

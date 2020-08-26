@@ -1,15 +1,17 @@
+<div class="form">
+
 <%= form_for @plane do |f| %>
 
-  <%= f.label :name %><br>
-  <%= f.text_field :name %><br>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
 
-  <%= f.label :columns %><br>
-  <%= f.text_field :columns %><br>
+  <%= f.label :columns %>
+  <%= f.text_field :columns %>
 
-  <%= f.label :rows %><br>
-  <%= f.text_field :rows %><br>
+  <%= f.label :rows %>
+  <%= f.text_field :rows %>
   
-  <%= f.submit nil, class: "add_plane" %>
+  <%= f.submit nil, class: "create_button" %>
 
   <div class="error_message">
     <% if flash[:error] %>
@@ -18,3 +20,5 @@
   </div>
   
 <% end %>
+
+</div>

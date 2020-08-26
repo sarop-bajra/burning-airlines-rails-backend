@@ -10,6 +10,29 @@
   </head>
 
   <body>
+
+    <nav class="nav">
+      <div class="nav_wrapper">
+        <div class="nav_wrapper_left">
+          <%= link_to image_tag("ba_logo.svg", alt: "Logo", class: "logo"), new_plane_path %>
+        </div>
+        <div class="nav_wrapper_right">
+          <ul>
+            <li><%= link_to "Planes", new_plane_path %></li>
+            <li><%= link_to "Flights", new_flight_path %></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr>
+
     <%= yield %>
+
+    <footer>
+      <div class="footer_wrapper">
+        <p>&copy 2020 - Jam | Swaroop | Ryan from General Assembly SEI 37.</p>
+      </div>
+    </footer>
+
   </body>
 </html>
