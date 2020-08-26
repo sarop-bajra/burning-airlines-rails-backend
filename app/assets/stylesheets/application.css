@@ -20,6 +20,10 @@ html, body, div, nav, header, footer, ul, li, label, input, textarea, button, h1
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .error_message {
   color: red;
 }

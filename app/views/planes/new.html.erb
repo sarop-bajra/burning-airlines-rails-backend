@@ -10,7 +10,7 @@
     <% @planes.each do |plane| %>
       <li>
         <h4><%= plane.name %></h4>
-        <p>Total Seat: <%= plane.columns * plane.rows %></p>
+        <p>Total Seats: <strong><%= plane.columns * plane.rows %></strong></p>
         <div class="seat_grid">
           <% plane.columns.times do |i| %>
             <div class="columns">
