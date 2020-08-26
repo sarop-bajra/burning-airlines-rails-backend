@@ -1,5 +1,21 @@
 <h2>Create a new flight.</h2>
 
+<%= render partial: "form" %>
 
 <hr>
 
+<div>
+  <h2>All Flights</h2>
+  <ul>
+    <% @flights.each do |flight| %>
+      <li>
+        <h4><%= flight.date %></h4>
+        <h4><%= flight.origin %></h4>
+        <h4><%= flight.destination %></h4>
+        <h4><%= flight.plane.name %></h4>
+        <h4><%= flight.plane.columns * flight.plane.rows %></h4>
+        <br>
+      </li>
+    <% end %>
+  </ul>
+</div>

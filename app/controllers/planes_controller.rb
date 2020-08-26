@@ -5,7 +5,6 @@ class PlanesController < ApplicationController
   end
 
   def create
-    # raise "hell"
     if plane_params[:name].present? && plane_params[:columns].present? && plane_params[:rows].present?
       Plane.create plane_params
     else

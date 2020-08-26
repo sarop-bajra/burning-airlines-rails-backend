@@ -5,9 +5,17 @@ class FlightsController < ApplicationController
   end
 
   def create
+    # raise "hell"
+    if flight_params[:date].present? && flight_params[:origin].present? && flight_params[:destination].present?
+      Flight.create flight_params
+    else
+      flash[:error] = "Field can't be black."
+    end
+    redirect_to(new_flight_path)
   end
 
   def index
+    render json: Flight.all
   end
 
   def show
@@ -21,4 +29,11 @@ class FlightsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def flight_params
+    params.require(:flight).permit(:date, :origin, :destination, :plane_id)
+  end  
+
 end
