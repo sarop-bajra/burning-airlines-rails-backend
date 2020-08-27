@@ -15,7 +15,10 @@ class FlightsController < ApplicationController
   end
 
   def index
-    render json: Flight.all
+    # @flights = Flight.where(["origin= ? and destination = ?", "Sydney", "Melbourne"])
+    # @flights = Flight.where(origin=params, destination = )
+    @flights = Flight.all.where( origin: params[ :origin ], destination: params[ :destination])
+    render json: @flights
   end
 
   def show
