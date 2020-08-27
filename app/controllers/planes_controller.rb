@@ -14,7 +14,7 @@ class PlanesController < ApplicationController
   end
 
   def index
-    @plane = Plane.all.where(id: params[:planeID])
+    @plane = Plane.all.where(id: params[:planeId])
     render json: @plane
   end
 
