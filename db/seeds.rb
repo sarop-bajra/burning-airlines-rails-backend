@@ -91,10 +91,10 @@ r6 = Reservation.create! column: 5, row: 5
 r7 = Reservation.create! column: 1, row: 2
 
 # Plane has many flights
-p1.flights << f1 << f2
-p2.flights << f3
-p3.flights << f4
-p4.flights << f5
+p1.flights << f1 << f2 << f14 << f11 << f18 << f19 << f23 << f24 << f33 << f37 << f39 << f40 << f41 << f53 << f54 << f55 << f56
+p2.flights << f3 << f6 << f7 << f9 << f20 << f25 << f26 << f27 << f34 << f38 << f42 << f43 << f44
+p3.flights << f4 << f8 << f10 << f12 << f13 << f21 << f28 << f29 << f30 << f45 << f46 << f47 << f48
+p4.flights << f5 << f15 << f16 << f17 << f22 << f31 << f32 << f35 << f36 << f49 << f50 << f51 << f52
 
 # Flight has Reservation
 f1.reservations << r1 << r5
