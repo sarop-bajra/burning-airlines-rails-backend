@@ -17,9 +17,9 @@ puts "Creating flights..."
 Flight.destroy_all
 f1 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Melbourne'
 f2 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Brisbane'
-f3 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Adelaide'
+f3 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Melbourne'
 f4 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Perth'
-f5 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Hobart'
+f5 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Melbourne'
 f6 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Darwin'
 f7 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Canberra'
 f8 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Sydney'
