@@ -14,14 +14,18 @@
     <nav class="nav">
       <div class="nav_wrapper">
         <div class="nav_wrapper_left">
-          <%= link_to image_tag("ba_logo.svg", alt: "Logo", class: "logo"), new_plane_path %>
+          <%= link_to image_tag("ba_logo.svg", alt: "Logo", class: "logo"), login_path %>
         </div>
+
+        <% if @current_user.present? %>
         <div class="nav_wrapper_right">
           <ul>
             <li><%= link_to "Planes", new_plane_path %></li>
             <li><%= link_to "Flights", new_flight_path %></li>
+            <li><%= link_to "Logout", login_path, method: 'delete' %></li>
           </ul>
         </div>
+        <% end %>
       </div>
     </nav>
     <hr>
