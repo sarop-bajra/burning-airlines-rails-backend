@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root to: 'session#new'
   get '/dashboard' => 'pages#dashboard'
 
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
 
   # Flight
   resources :flights
+
+  # Reservation
+  resources :reservations
 
 
 end
