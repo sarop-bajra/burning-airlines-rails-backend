@@ -8,7 +8,7 @@ class PlanesController < ApplicationController
     if plane_params[:name].present? && plane_params[:columns].present? && plane_params[:rows].present?
       Plane.create plane_params
     else
-      flash[:error] = "Field can't be black."
+      flash[:error] = "Field can't be blank."
     end
     redirect_to(new_plane_path)
   end

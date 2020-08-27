@@ -9,7 +9,7 @@ class FlightsController < ApplicationController
     if flight_params[:date].present? && flight_params[:origin].present? && flight_params[:destination].present?
       Flight.create flight_params
     else
-      flash[:error] = "Field can't be black."
+      flash[:error] = "Field can't be blank."
     end
     redirect_to(new_flight_path)
   end
