@@ -15,11 +15,62 @@ puts "created #{ Plane.count } plane."
 
 puts "Creating flights..."
 Flight.destroy_all
-f1 = Flight.create! date: '2020/01/16', origin: 'Sydney', destination: 'Melbourne'
-f2 = Flight.create! date: '2020/03/11', origin: 'Melbourne', destination: 'Adelaide'
-f3 = Flight.create! date: '2020/04/13', origin: 'Adelaide', destination: 'Perth'
-f4 = Flight.create! date: '2020/05/23', origin: 'Perth', destination: 'Hobart'
-f5 = Flight.create! date: '2020/05/26', origin: 'Brisbane', destination: 'Hobart'
+f1 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Melbourne'
+f2 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Brisbane'
+f3 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Adelaide'
+f4 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Perth'
+f5 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Hobart'
+f6 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Darwin'
+f7 = Flight.create! date: '2020/08/29', origin: 'Sydney', destination: 'Canberra'
+f8 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Sydney'
+f9 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Brisbane'
+f10 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Adelaide'
+f11 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Perth'
+f12 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Hobart'
+f13 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Darwin'
+f14 = Flight.create! date: '2020/08/30', origin: 'Melbourne', destination: 'Canberra'
+f15 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Sydney'
+f16 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Melbourne'
+f17 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Adelaide'
+f18 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Perth'
+f19 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Hobart'
+f20 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Darwin'
+f21 = Flight.create! date: '2020/08/28', origin: 'Brisbane', destination: 'Canberra'
+f22 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Sydney'
+f23 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Brisbane'
+f24 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Perth'
+f25 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Hobart'
+f26 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Darwin'
+f27 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Canberra'
+f28 = Flight.create! date: '2020/08/29', origin: 'Adelaide', destination: 'Melbourne'
+f29 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Sydney'
+f30 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Melbourne'
+f31 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Brisbane'
+f32 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Adelaide'
+f33 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Hobart'
+f34 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Darwin'
+f35 = Flight.create! date: '2020/08/28', origin: 'Perth', destination: 'Canberra'
+f36 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Sydney'
+f37 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Melbourne'
+f38 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Brisbane'
+f39 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Adelaide'
+f40 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Perth'
+f41 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Darwin'
+f42 = Flight.create! date: '2020/08/27', origin: 'Hobart', destination: 'Canberra'
+f43 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Sydney'
+f44 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Melbourne'
+f45 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Brisbane'
+f46 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Adelaide'
+f47 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Perth'
+f48 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Hobart'
+f49 = Flight.create! date: '2020/08/30', origin: 'Darwin', destination: 'Canberra'
+f50 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Sydney'
+f51 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Melbourne'
+f52 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Brisbane'
+f53 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Adelaide'
+f54 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Perth'
+f55 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Darwin'
+f56 = Flight.create! date: '2020/08/28', origin: 'Canberra', destination: 'Hobart'
 puts "created #{ Flight.count } flight."
 
 puts "Creating users..."
@@ -40,10 +91,10 @@ r6 = Reservation.create! column: 5, row: 5
 r7 = Reservation.create! column: 1, row: 2
 
 # Plane has many flights
-p1.flights << f1 << f2
-p2.flights << f3
-p3.flights << f4
-p4.flights << f5
+p1.flights << f1 << f2 << f14 << f11 << f18 << f19 << f23 << f24 << f33 << f37 << f39 << f40 << f41 << f53 << f54 << f55 << f56
+p2.flights << f3 << f6 << f7 << f9 << f20 << f25 << f26 << f27 << f34 << f38 << f42 << f43 << f44
+p3.flights << f4 << f8 << f10 << f12 << f13 << f21 << f28 << f29 << f30 << f45 << f46 << f47 << f48
+p4.flights << f5 << f15 << f16 << f17 << f22 << f31 << f32 << f35 << f36 << f49 << f50 << f51 << f52
 
 # Flight has Reservation
 f1.reservations << r1 << r5
